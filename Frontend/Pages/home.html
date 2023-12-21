@@ -4,27 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="/Frontend/styles/home.css"/>
+    <link rel="stylesheet" href="../Styles/home.css"/>
 </head>
 <body>
-    <!-- <nav id="navbar">
+    <nav id="navbar">
         <ul>
-            <li><a href="#">Home</a></li> 
-            <li><a target="_blank" href="#">Measurements</a></li> 
-            <li><a target="_blank" href="#">Account</a></li> 
-        </ul>
-    </nav> -->
-    <nav id="nav">
-        <ul>
-            <li><a href="#">Home</a></li> 
-            <li><a target="_blank" href="#">Measurements</a></li> 
-            <li><a target="_blank" href="#">Account</a></li> 
+            <li><a href="home.html">Home</a></li> 
+            <li><a target="_blank" href="measurements.html">Measurements</a></li> 
+            <li><a target="_blank" href="account.html">Account</a></li> 
+            <li><a target="_blank" href="#">About Me</a></li>
         </ul>
     </nav>
-    <hr id="white-line">
-    <h1>Welcome!</h1>
-    <hr id="white-line">
-    <p>Description: </p>
+    <div class="action">
+        <hr id="white-line">
+        <h2>Do you like testing the bounds of virtual and physical with clothes?</h2> <!-- Subject to change -->
+        <hr id="section-line">
+        <h3>Unfold your creativity and experiment, while discovering your personal style. <br/>
+            Plus added comfort and confidence along the way!<br/>  <!-- Change Plus for With maybe -->
+            (Heh, unfold)
+        </h3>
+        <button id="btn">Let's Go</button> <!-- Send to sign-up page  -->
+        <hr id="white-line"> <!-- Fun pun 'Sew what if I'm a little buttoned up?'  -->
+    </div>
+    <div id="description">
+        <p> WearShare was created to inspire people to explore their creativity through fashion. 
+            After signing in or creating an account with us, you can experience the full wonders we have to offer!
+        </p> 
+        <br/>
+        <div id="section-box">
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img class="img" src="../images/bonnetKitty.PNG"/>
+                <div class="text">Measurements page description</div>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img class="img" src="../images/orangeKitty.PNG"/>
+                <div class="text">3D body models with the urgency of accurate measurements</div>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div> <!-- Might change with  -->
+                <img class="img" src="../images/pinkKitty.PNG"/>
+                <div class="text">How the AI is being used briefly</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+    </div>
+        <!-- <p>Cost: So free 🆓 Freer then a public 🚋 restroom 🚻</p> -->
+    <!-- <p>Benefits to using the site (How can I help?): </p>
         <ul>
             <li> What it do </li>
             <li> How much it costs </li>
@@ -32,10 +61,33 @@
             <li> Show pictures </li> 
             <li> Give a story </li>
         </ul>
-        <p>Excited?! Click <a href="signUp.html">here</a> to see some cool stuff!</p>
-        <p>Or if you're already have an account, <a href="login.html">login</a></p>
+        <p>Excited, click <a href="signUp.html">here</a> to see some cool stuff!</p> -->
+    </div>
+    <br/>
+    <div id="blank-space">
+        Story Here: 
+        <p>Let's have more than just some text let's really make it pop!</p>
+    </div>
+    <br/>
+    <div >
+        <p>Talk about how time constraints don't let people try on clothes</p>
+        <p>Trying on clothes in the comfort and privately</p>
+    </div>
     <hr id="white-line">
+    <div>
+        <p>Another reason to sign-up </p>
+    </div>
+    <hr id="white-line">
+    <div>
+        <p>Proof</p>
+    </div>
+    <hr id="white-line">
+    <footer>Copyrighted so don't steal buddy or else {some meme}, privacy, terms and conditions, plus socia media links</footer>
 </body>
+<script src="../animation/home.js"></script>
 </html>
+
+
+<!-- https://www.pinterest.com/pin/375276581461895995/ about me page -->
 
 <!-- zlyer isnt exactly what I do and TryNDBuy is buggy/temp shut down -->
