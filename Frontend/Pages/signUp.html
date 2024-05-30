@@ -4,38 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up</title>
+    <link rel="stylesheet" href="../Styles/signUp.css"/>
 </head>
 <body>
-    <h2>Sign-up:</h2>
-    <form action="">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" placeholder="First name" ><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" placeholder="Last name" ><br>
-        <label for="username">Username:</label><br>
-        <input type="text" placeholder="Username"><br>
-        <label for="password">Password:</label><br>
-        <input type="password" placeholder="Password" required><br>
-        <label for="password">Confirm Password:</label><br>
-        <input type="confirm-password" placeholder="Confirm Password" required><br>
-        <input type="submit" value="Submit">
-    </form>
-    ---------------------------------------------------- <br/>
-    <h2>Measurements:</h2>
-    ---------------------------------------------------- <br/>
-    <input type="" placeholder="Height" required><br>
-    <input type="" placeholder="Weight" required><br>
-    <input type="" placeholder="Bust" required><br>
-    <input type="" placeholder="Waist" required><br>
-    <input type="" placeholder="Hip" required><br>
-    <input type="number" placeholder="Age" required><br>
-    <input type="text" placeholder="Gender" required><br>
-    <input type="text" placeholder="Cup Size" required><br>
-    ---------------------------------------------------- <br/>
-    <button>Create Account</button>
-    <p>Or if you're already have an account, <a href="login.html">login</a></p>
+    <nav id="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li> 
+            <li><a target="_blank" href="measurements.html">Measurements</a></li> 
+            <li><a target="_blank" href="account.html">Account</a></li> 
+            <li><a target="_blank" href="#">About Me</a></li>
+        </ul>
+    </nav>
+    <hr id="white-line">
+    <div id="section-box">
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 2</div>
+                <h2>Sign-up</h2>
+                <form action="">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="First name" ><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Last name" ><br>
+                    <label for="username">Username:</label><br>
+                    <input type="text" placeholder="Username"><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" placeholder="Password" required><br>
+                    <label for="password">Confirm Password:</label><br>
+                    <input type="confirm-password" placeholder="Confirm Password" required><br>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+                <div class="text"></div>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 2</div>
+                <h2>Measurements</h2>
+                <form action="">
+                    <label for="">Height:</label><br>
+                    <input type="text" placeholder="Height" required><br>
+                    <label for="">Weight:</label><br>
+                    <input type="text" placeholder="Weight" required><br>
+                    <label for="">Bust:</label><br>
+                    <input type="text" placeholder="Bust" required><br>
+                    <label for="">Waist:</label><br>
+                    <input type="text" placeholder="Waist" required><br>
+                    <label for="">Hip:</label><br>
+                    <input type="text" placeholder="Hip" required><br>
+                    <label for="">Age:</label><br>
+                    <input type="number" placeholder="Age" required><br>
+                    <label for="">Gender:</label><br>
+                    <input type="text" placeholder="Gender" required><br>
+                    <label for="">Cup Size:</label><br>
+                    <input type="text" placeholder="Cup Size" required><br>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+                <div class="text"></div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+    </div>
+    <hr id="white-line">
+    <footer>Copyrighted so don't steal buddy or else {some meme}, privacy, terms and conditions, plus socia media links</footer>
 </body>
+<script src="../animation/home.js"></script>
 </html>
-<!-- use a modal: https://www.youtube.com/watch?v=ea2gjdW1Q_Y  OR https://www.w3schools.com/howto/howto_js_slideshow.asp -->
 <!-- Pictures of a 3d body model getting measured as background -->
 <!-- Usernames must be unique, at least 8 characters long, with 1 special symbol, and 1 number! -->
+
+<!-- Make the submit button save the info but still push to the next slide Have a pop show if completed or not-->

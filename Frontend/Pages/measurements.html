@@ -4,17 +4,300 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Measurements</title>
+    <link rel="stylesheet" href="../Styles/measurements.css"/>
 </head>
 <body>
-    <h1>Measurements: (Display ONLY)
-    </h1> 
-    ---------------------------------------------------- <br/>
-    <input type="" placeholder="Height" required><br>
-    <input type="" placeholder="Weight" required><br>
-    <input type="" placeholder="Bust" required><br>
-    <input type="" placeholder="Waist" required><br>
-    <input type="" placeholder="Hip" required><br>
-    ---------------------------------------------------- <br/>
-    <p>Measurements changed, need to <a href="#">edit</a>?</p>
+    <nav id="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li> 
+            <li><a target="_blank" href="measurements.html">Measurements</a></li> 
+            <li><a target="_blank" href="account.html">Account</a></li> 
+            <li><a target="_blank" href="#">About Me</a></li>
+        </ul>
+    </nav>
+    <hr id="white-line">
+    <div id="section-box">
+    <h2>Display Only Measurements</h2>
+                <form action="">
+                    <label for="">Height:</label><br>
+                    <input type="text" placeholder="Height" required><br>
+                    <label for="">Weight:</label><br>
+                    <input type="text" placeholder="Weight" required><br>
+                    <label for="">Bust:</label><br>
+                    <input type="text" placeholder="Bust" required><br>
+                    <label for="">Waist:</label><br>
+                    <input type="text" placeholder="Waist" required><br>
+                    <label for="">Hip:</label><br>
+                    <input type="text" placeholder="Hip" required><br>
+                    <label for="">Age:</label><br>
+                    <input type="number" placeholder="Age" required><br>
+                    <label for="">Gender:</label><br>
+                    <input type="text" placeholder="Gender" required><br>
+                    <label for="">Cup Size:</label><br>
+                    <input type="text" placeholder="Cup Size" required><br>
+                </form>
+    <p>Have your measurements changed, click here to <a href="#">edit</a></p>
+</div>
+<hr id="white-line">
+    <footer>Copyrighted so don't steal buddy or else {some meme}, privacy, terms and conditions, plus socia media links</footer>
 </body>
 </html>
+
+
+<!-- <h1>Timeline of Daijah Coppage</h1>
+    <ol>
+        <li class="timeline">
+            <p class="event-date">Date</p>
+            <p class="event-description">Text</p>
+            
+        <li class="timeline">
+            <p class="event-date">High School 2019</p>
+            <p class="event-description">I went to a robotics competetion</p>
+            
+        </li>
+        <li class="timeline">
+            <p class="event-date">Date</p>
+            <p class="event-description">Text</p>
+            
+        </li>
+    </ol> -->
+
+
+
+
+    <!-- :root {
+        font-family: sans-serif;
+      }
+      ol {
+        margin: 0;
+        list-style: none;
+        padding: 0;
+        --hue: 1;
+        --unit: 1rem;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+      }
+      p {
+        line-height: 1.3;
+      }
+      .event-date {
+        margin: 0 0 0.25rem;
+        font-weight: bold;
+      }
+      .event-description {
+        margin: 0;
+      }
+      /* img{
+        display: block;
+            margin-left: auto;
+            margin-right: auto;
+      } */
+      .timeline {
+        --height: 7rem;
+        position: relative;
+        display: block;
+        background-color: #FFBE98;
+        border-color: #D6EDF5;
+        padding: 1rem;
+        margin: 2rem 0;
+      }
+      .timeline::before {
+        content: "";
+        background-color: inherit;
+        position: absolute;
+        display: block;
+        width: var(--unit);
+        height: var(--unit);
+        top: 100%;
+        left: calc(50% - (var(--unit)/2));
+      }
+      .timeline::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: calc(100% + var(--unit));
+        left: calc(50% - (var(--unit)));
+        border: var(--unit) solid transparent;
+        border-top-color: inherit;
+      }
+      .timeline:last-child::before,
+      .timeline:last-child::after {
+        content: none;
+      }
+      .timeline:nth-child(20n+1){
+        --hue: 1;
+      }
+      .timeline:nth-child(20n+2){
+        --hue: 2;
+      }
+      .timeline:nth-child(20n+3){
+        --hue: 3;
+      }
+      .timeline:nth-child(20n+4){
+        --hue: 4;
+      }
+      .timeline:nth-child(20n+5){
+        --hue: 5;
+      }
+      .timeline:nth-child(20n+6){
+        --hue: 6;
+      }
+      .timeline:nth-child(20n+7){
+        --hue: 7;
+      }
+      .timeline:nth-child(20n+8){
+        --hue: 8;
+      }
+      .timeline:nth-child(20n+9){
+        --hue: 9;
+      }
+      .timeline:nth-child(20n+10){
+        --hue: 10;
+      }
+      .timeline:nth-child(20n+11){
+        --hue: 11;
+      }
+      .timeline:nth-child(20n+12){
+        --hue: 12;
+      }
+      .timeline:nth-child(20n+13){
+        --hue: 13;
+      }
+      .timeline:nth-child(20n+14){
+        --hue: 14;
+      }
+      .timeline:nth-child(20n+15){
+        --hue: 15;
+      }
+      .timeline:nth-child(20n+16){
+        --hue: 16;
+      }
+      .timeline:nth-child(20n+17){
+        --hue: 17;
+      }
+      .timeline:nth-child(20n+18){
+        --hue: 18;
+      }
+      .timeline:nth-child(20n+19){
+        --hue: 19;
+      }
+      .timeline:nth-child(20n+20){
+        --hue: 20;
+      }
+      @media (min-width: 550px) and (max-width: 899px){
+        .timeline {
+          margin: 1rem;
+          width: calc(50% - 4rem);
+          float: left;
+          min-height: var(--height);
+        }
+        .timeline:nth-child(4n+3),
+        .timeline:nth-child(4n+4) {
+          float: right;
+        }
+        .timeline:nth-child(4n+1)::before {
+          top: calc(var(--height)/2 + var(--unit)/2);
+          left: 100%;
+        }
+        .timeline:nth-child(4n+1)::after {
+          top: calc(var(--height)/2);
+          left: calc(100% + (var(--unit)));
+          border: var(--unit) solid transparent;
+          border-left-color: inherit;
+        }
+        .timeline:nth-child(4n+3)::before {
+          top: calc(var(--height)/2 + var(--unit)/2);
+          left: -1rem;
+        }
+        .timeline:nth-child(4n+3)::after {
+          top: calc(var(--height)/2);
+          left: -3rem;
+          border: var(--unit) solid transparent;
+          border-right-color: inherit;
+        }
+      }
+      @media (min-width: 900px) and (max-width: 1199px){
+        .timeline {
+          margin: 1rem;
+          width: calc(33.33% - 4rem);
+          float: left;
+          min-height: 7rem;
+        }
+        .timeline:nth-child(6n+4),
+        .timeline:nth-child(6n+5),
+        .timeline:nth-child(6n+6) {
+          float: right;
+        }
+        .timeline:nth-child(6n+1)::before,
+        .timeline:nth-child(6n+2)::before {
+          top: calc(var(--height)/2 + var(--unit)/2);
+          left: 100%;
+        }
+        .timeline:nth-child(6n+1)::after,
+        .timeline:nth-child(6n+2)::after {
+          top: 3.5rem;
+          left: calc(100% + (var(--unit)));
+          border: var(--unit) solid transparent;
+          border-left-color: inherit;
+        }
+        .timeline:nth-child(6n+4)::before,
+        .timeline:nth-child(6n+5)::before{
+          top: calc(var(--height)/2 + var(--unit)/2);
+          left: -1rem;
+        }
+        .timeline:nth-child(6n+4)::after,
+        .timeline:nth-child(6n+5)::after{
+          top: calc(var(--height)/2);
+          left: -3rem;
+          border: var(--unit) solid transparent;
+          border-right-color: inherit;
+        }
+      }
+      @media (min-width: 1200px){
+        ol {
+          max-width: 1600px;
+          margin: 0 auto;
+        }
+        .timeline {
+          margin: 1rem;
+          width: calc(25% - 4rem);
+          float: left;
+          min-height: 7rem;
+        }
+        .timeline:nth-child(8n+5),
+        .timeline:nth-child(8n+6),
+        .timeline:nth-child(8n+7),
+        .timeline:nth-child(8n+8){
+          float: right;
+        }
+        .timeline:nth-child(8n+1)::before,
+        .timeline:nth-child(8n+2)::before,
+        .timeline:nth-child(8n+3)::before{
+          top: calc(var(--height)/2 + var(--unit)/2);
+          left: 100%;
+        }
+        .timeline:nth-child(8n+1)::after,
+        .timeline:nth-child(8n+2)::after,
+        .timeline:nth-child(8n+3)::after{
+          top: calc(var(--height)/2);
+          left: calc(100% + (var(--unit)));
+          border: var(--unit) solid transparent;
+          border-left-color: inherit;
+        }
+        .timeline:nth-child(8n+5)::before,
+        .timeline:nth-child(8n+6)::before,
+        .timeline:nth-child(8n+7)::before {
+          top: calc(var(--height)/2 + var(--unit)/2);
+          left: -1rem;
+        }
+        .timeline:nth-child(8n+5)::after,
+        .timeline:nth-child(8n+6)::after,
+        .timeline:nth-child(8n+7)::after {
+          top: calc(var(--height)/2);
+          left: -3rem;
+          border: var(--unit) solid transparent;
+          border-right-color: inherit;
+        }
+      } -->

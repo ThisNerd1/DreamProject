@@ -1,0 +1,47 @@
+body{
+    background-color:#07889B;
+}
+
+#navbar ul {
+    list-style: none; 
+    text-align: center; 
+    padding: 20px; 
+    /* background-color: #D3D3D3; */
+    height: 20px;
+}
+
+#navbar ul li {
+    display: inline-block; 
+    margin: 0 10px; 
+}
+
+#navbar ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 20px;
+}
+
+#navbar ul li a:hover {
+    color: white; 
+    text-decoration: none; 
+    font-size: 20px;
+    background-color: #0d525b;
+}
+
+#white-line {
+    border: none; 
+    background-color: white; 
+    height: 2px; 
+    margin: 20px 0; 
+}
+
+#section-box{
+    background-color: #EEAA78;
+    border: 5px solid white;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    text-align: center;
+}

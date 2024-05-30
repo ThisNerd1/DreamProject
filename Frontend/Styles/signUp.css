@@ -35,68 +35,14 @@ body{
     margin: 20px 0; 
 }
 
-h2{
-    text-align: center;
-    color: #676767; /* Can switch to #db610b */
-}
-
-#section-line {
-    border: none; 
-    background-color: #676767;  /* Can switch to #db610b */
-    height: 2px; 
-    width: 500px;
-    margin: 20px, 0, 0, 500px; 
-}
-
-.action{
-    background-color: #EEAA78;
-}
-
-h3{
-    text-align: center;
-    color: #676767; /* Can switch to #db610b */
-}
-
-#btn{
-    background-color: #66B9BF; /* Change colors */
-    border: none;
-    color: white;
-    padding: 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px 0 720px;
-    cursor: pointer;
-}
-
-#btn:hover {background-color: #db610b} /* Change colors */
-
-#btn:active {
-    background-color: #db610b; /* Change colors */
-    box-shadow: 0 5px #b1b1b1;
-    transform: translateY(4px);
-}
-
-#description{
-    text-align: center;
-    color: white;
-    font-size: 19px;
-}
-
 #section-box{
-    background-color: #F7AF9D;
+    background-color: #EEAA78;
     border: 5px solid white;
     width: 800px;
-    height: 410px;
+    height: 500px;
     margin: auto;
-}
-
-.img{
-    border-radius: 8px;
-    height: 400px; 
-    max-width: 800px;
-    object-fit: fill;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 
 .slideshow-container {
@@ -107,6 +53,8 @@ h3{
 
 .mySlides {
     display: none;
+    text-align: center;
+    padding: 50px;
 }
 
 .prev, .next {
@@ -158,37 +106,5 @@ h3{
     position: absolute;
     top: 0;
 }
-
-#blank-space{
-    background-color: #EEAA78;
-    border: 5px solid white;
-    height: 300px;
-    text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
