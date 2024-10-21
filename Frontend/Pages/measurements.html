@@ -18,8 +18,8 @@
     <hr id="white-line">
     <div id="section-box">
     <h2>Display Only Measurements</h2>
-                <form action="">
-                    <label for="">Height:</label><br>
+                <form method="post" onsubmit="getUserGender(event)">
+                    <!-- <label for="">Height:</label><br>
                     <input type="text" placeholder="Height" required><br>
                     <label for="">Weight:</label><br>
                     <input type="text" placeholder="Weight" required><br>
@@ -30,17 +30,53 @@
                     <label for="">Hip:</label><br>
                     <input type="text" placeholder="Hip" required><br>
                     <label for="">Age:</label><br>
-                    <input type="number" placeholder="Age" required><br>
-                    <label for="">Gender:</label><br>
-                    <input type="text" placeholder="Gender" required><br>
-                    <label for="">Cup Size:</label><br>
-                    <input type="text" placeholder="Cup Size" required><br>
+                    <input type="number" placeholder="Age" required><br> -->
+                    <label for="gender">Gender:</label><br>
+                    <select id="gender"  name="gender" required>
+                      <option value="">-Select Gender-</option>
+                      <option value="Female">Female</option>
+                      <option value="Male">Male</option>
+                    </select><br><br>
+                    <!-- <label for="">Cup Size:</label><br>
+                    <input type="text" placeholder="Cup Size" required><br> -->
+                    <!-- <button onclick="getUserGender()">Submit</button> -->
+                    <button>Submit</button>
                 </form>
     <p>Have your measurements changed, click here to <a href="#">edit</a></p>
 </div>
 <hr id="white-line">
     <footer>Copyrighted so don't steal buddy or else {some meme}, privacy, terms and conditions, plus socia media links</footer>
 </body>
+<script>
+  async function getUserGender(event) {
+    event.preventDefault();
+    const selectedGender = document.getElementById("gender");
+    const gender = selectedGender ? selectedGender.value : null;
+    if (selectedGender) {
+        const gender = selectedGender.value;
+        alert("You selected: " + gender);
+        const data = { "gender": selectedGender.value };
+        // Send the user gender to the backend
+        await fetch('http://localhost:3000/createGender', { 
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log('Success:', data);
+            alert('Gender submitted successfully!');
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    } else {
+        alert("Please select a gender option.");
+    }
+}
+</script>
 </html>
 
 
